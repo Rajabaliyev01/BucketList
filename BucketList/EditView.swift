@@ -32,11 +32,7 @@ struct EditView: View {
                         TextField("Place name", text: $name)
                         TextField("Description", text: $description)
                     }
-                    .listRowBackground(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .fill(.white.opacity(0.07))
-                                    )
-                    
+                    .listRowBackground(Color.white.opacity(0.07))
                     Section("Nearby…") {
                         switch loadingState {
                         case .loaded:

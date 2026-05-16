@@ -26,7 +26,7 @@ struct ContentView: View {
                         Annotation(location.name, coordinate: location.coordinate) {
                             Image(systemName: "mappin.circle.fill")
                                 .resizable()
-                                .foregroundStyle(.red.gradient)
+                                .foregroundStyle(.orange)
                                 .frame(width: 44, height: 44)
                                 .background(.ultraThinMaterial)
                                 .clipShape(.circle)
